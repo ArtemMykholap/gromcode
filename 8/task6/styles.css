@@ -1,6 +1,7 @@
 .rectangles {
     box-sizing: content-box;
     padding: 50px;
+    border: 2px solid black;
 }
 
 .rectangle1 {
