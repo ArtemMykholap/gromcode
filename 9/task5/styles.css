@@ -20,6 +20,11 @@
     line-height: 40px;
 }
 
+li:nth-child(2),
+li:nth-child(3) {
+    margin-left: 14px;
+}
+
 .content {
     background-color: beige;
     height: 5000px;
