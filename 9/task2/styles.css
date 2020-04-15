@@ -5,16 +5,16 @@
 }
 
 .red {
-    float: left;
-    background-color: green;
-}
-
-.green {
     float: right;
     background-color: red;
 }
 
+.green {
+    float: left;
+    background-color: green;
+}
+
 .footer {
     clear: both;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
