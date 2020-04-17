@@ -7,7 +7,8 @@ console.log("+'77': ", 77);
 // Бинарный плюс складывает строки или прибавляет числа
 10 + '5';
 'some' + 'text';
-console.log("10+'5': ", 10 + '5');
+console.log("10 + '5': ", 10 + '5');
+console.log("'some' + 'text': ", 'some' + 'text');
 
 // Математические операции с undefined возвращают NaN
 undefined + 1;
@@ -21,7 +22,7 @@ console.log("undefined + '5': ", undefined + '5');
 
 
 7 - null;
-console.log("7 - null :", 7 - null);
+console.log("7 - null: ", 7 - null);
 5 - undefined;
 console.log("5 - undefined: ", 5 - undefined)
 
@@ -40,7 +41,7 @@ console.log('-a: ', b);
 
 
 '24' / 4;
-console.log("'24' / 4 : ", '24' / 4);
+console.log("'24' / 4: ", '24' / 4);
 
 
 18 * '3';
