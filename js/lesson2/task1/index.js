@@ -1,8 +1,8 @@
 const userName = 'John';
 const greeting = "I'm John";
-const profession = 'Developer';
+const _profession = 'Developer';
 const $hobby = 'Walking';
-const favouriteDESSERT = 'cake';
+const favouriteDessert = 'cake';
 let pet_ = 'dog';
 let superNumber;
-let superNumber = 17;
+superNumber = 17;
