@@ -19,7 +19,7 @@ console.log("'a' < 'b': ", 'a' < 'b');
 
 
 'ab' > 'a';
-console.log("'ab' < 'a': ", 'ab' < 'a');
+console.log("'ab' > 'a': ", 'ab' > 'a');
 
 /* строгое сравнение */
 
