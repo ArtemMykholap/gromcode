@@ -3,22 +3,23 @@
 const a = 17;
 const b = 5;
 a > b;
+console.log("a > b: ", a > b);
 a <= b;
+console.log("a <= b: ", a <= b);
 a == b;
+console.log("a == b: ", a == b);
 a != b;
-console.log("a>b: ", a > b)
-console.log("a<=b: ", a <= b)
-console.log("a==b: ", a == b)
-console.log("a!=b: ", a != b)
+
+console.log("a != b: ", a != b);
 
 /* сравнение строк */
 
 'a' < 'b';
-console.log("'a'<'b': ", 'a' < 'b')
+console.log("'a' < 'b': ", 'a' < 'b');
 
 
 'ab' > 'a';
-console.log("'ab'<'a': ", 'ab' < 'a')
+console.log("'ab' < 'a': ", 'ab' < 'a');
 
 /* строгое сравнение */
 
@@ -31,7 +32,7 @@ console.log("17 === 17: ", 17 === 17);
 
 
 17 === '17';
-console.log("17 === '17: ", 17 === '17');
+console.log("17 === '17': ", 17 === '17');
 
 
 17 === true;
