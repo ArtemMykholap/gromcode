@@ -6,5 +6,6 @@ do {
         result *= m;
     }
     m++;
+
 } while (m <= n);
 console.log('Result: ' + result);
