@@ -1,4 +1,5 @@
-function sayHi(Tom) {
-    const greeting = 'Hi, ' + Tom;
+function sayHi(name) {
+    const greeting = 'Hi, ' + name;
     console.log(greeting);
 }
+sayHi('Tom');
