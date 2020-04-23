@@ -1,3 +1,1 @@
-let square = (num) => {
-    return num * num;
-}
+let square = (num) => num * num;
