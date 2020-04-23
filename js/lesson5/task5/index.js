@@ -4,7 +4,6 @@ function getSum(a, b) {
         if (i % 2 === 0) {
             result += i;
         }
-        return result;
-
     }
+    return result;
 }
