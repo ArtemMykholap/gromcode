@@ -1,7 +1,7 @@
 function getEvenOdd(num) {
     if (num % 2 === 0) {
-        'even';
+        return 'even';
     } else {
-        'odd';
+        return 'odd';
     }
 }
