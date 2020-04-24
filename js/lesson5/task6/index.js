@@ -1,4 +1,5 @@
 function getPrimes(a, n) {
+    a = 1;
 
     for (let i = a; i <= n; i++) {
         let primeNumber = true;
