@@ -1,7 +1,7 @@
-function getPrimes(a, n) {
-    a = 1;
+function getPrimes(n) {
 
-    for (let i = a; i <= n; i++) {
+
+    for (let i = 1; i <= n; i++) {
         let primeNumber = true;
 
         for (let j = 2; j * 2 <= i; j++) {
