@@ -5,7 +5,7 @@ function increaser(index, a) {
 
 
     }
-    if (a < index) {
+    if (a <= index) {
         return a;
     }
 }
