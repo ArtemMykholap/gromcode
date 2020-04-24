@@ -1,6 +1,6 @@
-function getPrime(firstNumber, lastNumber) {
+function getPrime(a, n) {
 
-    for (let i = firstNumber; i <= lastNumber; i++) {
+    for (let i = a; i <= n; i++) {
         let primeNumber = true;
 
         for (let j = 2; j * 2 <= i; j++) {
