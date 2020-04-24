@@ -1,14 +1,22 @@
-function getPrime(n) {
-    for (let i = 1; i <= n; i++) {
-        for (let k = 2; k < i; k++) {
+function getPrime(firstNumber, lastNumber) {
 
-            if (i % k === 0) { continue; } else {
+    for (let i = firstNumber; i <= lastNumber; i++) {
+        let primeNumber = true;
 
-                console.log(i);
+        for (let j = 2; j * 2 <= i; j++) {
 
+            if (i % j === 0) {
+                primeNumber = false;
+                break;
             }
 
+        }
+        if (primeNumber && i > 1) {
+
+            console.log(i);
 
         }
+
+
     }
 }
