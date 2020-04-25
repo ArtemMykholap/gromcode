@@ -5,7 +5,7 @@ function findDivCount(a, b, c) {
     for (let i = a; i <= b; i++) {
         if (i % c === 0) {
 
-            newArray = emptyArray.push(i);
+            newArray = emptyArray.push('i');
 
         }
     }
