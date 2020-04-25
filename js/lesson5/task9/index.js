@@ -1,9 +1,9 @@
 let emptyArray = [];
 
-function findDivCount(a, b, c) {
+function findDivCount(a, b, n) {
     let newArray;
     for (let i = a; i <= b; i++) {
-        if (i % c === 0) {
+        if (i % n === 0) {
 
             newArray = emptyArray.push('i');
 
