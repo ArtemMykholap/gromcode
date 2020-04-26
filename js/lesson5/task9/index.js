@@ -12,5 +12,5 @@ function findDivCount(a, b, n) {
 
     }
 
-    console.log(count);
+    return count;
 }
