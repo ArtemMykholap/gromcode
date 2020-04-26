@@ -1,15 +1,15 @@
 function findDivCount(a, b, n) {
-    let emptyArray = [];
+    let count = 0;
 
     for (let i = a; i <= b; i++) {
 
         if (i % n === 0) {
 
-            emptyArray.push(i);
+            count++;
 
         }
 
     }
-    console.log(emptyArray.length);
+    console.log(count);
 
 }
