@@ -4,6 +4,7 @@
     background-color: bisque;
     min-width: 300px;
     width: 20%;
+    flex-grow: 1;
 }
 
 header {
