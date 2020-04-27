@@ -1,6 +1,6 @@
 function sum(from, to) {
     let result = 0;
-    for (i = from; i <= to; i++) {
+    for (let i = from; i <= to; i++) {
         result += i;
     }
     return result;
