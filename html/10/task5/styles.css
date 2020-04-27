@@ -1,0 +1,17 @@
+.article {
+    padding: 8px;
+    margin: 16px;
+    background-color: bisque;
+    min-width: 300px;
+    width: 20%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
