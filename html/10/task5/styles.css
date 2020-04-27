@@ -2,20 +2,24 @@
     box-sizing: border-box;
 }
 
+.article {
+    padding: 8px;
+    margin: 16px;
+    background-color: bisque;
+    width: 20%;
+    flex: 1 0 300px;
+}
+
 header {
     display: flex;
     justify-content: center;
 }
 
-.articles-list {
+main {
     display: flex;
-    flex-wrap: wrap;
 }
 
-.article {
-    margin: 8px;
-    padding: 16px 16px 8px 16px;
-    background-color: bisque;
-    width: 300px;
-    flex-grow: 1;
+.articles-list {
+    flex-wrap: wrap;
+    display: flex;
 }
