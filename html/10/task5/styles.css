@@ -1,18 +1,22 @@
-.article {
-    padding: 8px;
-    margin: 16px;
-    background-color: bisque;
-    min-width: 300px;
-    width: 20%;
-    flex-grow: 1;
+* {
+    box-sizing: border-box;
 }
 
-header {
+.header {
     display: flex;
     justify-content: center;
 }
 
-main {
+.articles-list {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 8px;
+}
+
+.article {
+    margin: 8px;
+    padding: 16px;
+    background-color: bisque;
+    width: 300px;
+    flex-grow: 1;
 }
