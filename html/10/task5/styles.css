@@ -1,22 +1,18 @@
-* {
-    box-sizing: border-box;
+.article {
+    padding: 8px;
+    margin: 16px;
+    background-color: bisque;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
-.header {
+header {
     display: flex;
     justify-content: center;
 }
 
-.articles-list {
+main {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 8px;
-}
-
-.article {
-    margin: 8px;
-    padding: 16px;
-    background-color: bisque;
-    width: 300px;
-    flex-grow: 1;
 }
