@@ -1,10 +1,5 @@
-.article {
-    padding: 8px;
-    margin: 16px;
-    background-color: bisque;
-    flex-basis: 300px;
-    flex-grow: 1;
-    flex-shrink: 1;
+* {
+    box-sizing: border-box;
 }
 
 header {
@@ -12,7 +7,15 @@ header {
     justify-content: center;
 }
 
-main {
+.articles-list {
     display: flex;
     flex-wrap: wrap;
+}
+
+.article {
+    margin: 8px;
+    padding: 16px;
+    background-color: bisque;
+    width: 300px;
+    flex-grow: 1;
 }
