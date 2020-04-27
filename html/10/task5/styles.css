@@ -3,8 +3,8 @@
 }
 
 .article {
-    padding: 8px;
-    margin: 16px;
+    margin: 8px;
+    padding: 16px;
     background-color: bisque;
     width: 20%;
     flex: 1 0 300px;
