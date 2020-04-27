@@ -31,6 +31,8 @@ main {
 }
 
 .news {
+    flex-direction: column;
+    display: flex;
     background-color: grey;
     width: 200px;
 }
@@ -55,8 +57,6 @@ main {
 }
 
 .news h2 {
-    justify-content: center;
-    display: flex;
     margin: 16px auto;
 }
 
