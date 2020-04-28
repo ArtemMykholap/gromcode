@@ -4,7 +4,10 @@
         
         header {
             display: flex;
-            justify-content: center;
+        }
+        
+        h1 {
+            text-align: center;
         }
         
         .articles-list {
@@ -13,7 +16,6 @@
         }
         
         .article {
-            display: block;
             margin: 8px;
             padding: 16px;
             background-color: bisque;
