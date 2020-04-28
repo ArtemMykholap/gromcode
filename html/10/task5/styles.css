@@ -15,5 +15,7 @@
             margin: 8px;
             padding: 16px;
             background-color: bisque;
-            flex: 1 0 300px;
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 300px;
         }
