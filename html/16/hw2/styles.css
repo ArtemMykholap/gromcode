@@ -3,5 +3,6 @@ form {
 }
 
 input {
-    margin: 4px;
+    margin: 8px;
+    padding: 0;
 }
