@@ -48,5 +48,5 @@
 }
 
 .form-input:invalid {
-    border: #0000 3px;
+    border: red;
 }
