@@ -35,7 +35,7 @@
 }
 
 .form-input:invalid {
-    border-color: red;
+    border: 3px #ff0000;
 }
 
 .form-input:active {
