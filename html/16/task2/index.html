@@ -10,7 +10,37 @@
 </head>
 
 <body>
+    <form>
 
+        <div class="form">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" value="Emerson" readonly>
+        </div>
+
+        <div class="form">
+            <label for="Age">Age</label>
+            <input id="Age" type="number" min="3" max="10" name="age" value="17">
+        </div>
+        <div class="form">
+            <input type="checkbox" id="checkbox-form" name="agree" disabled>
+            <label for="checkbox-form">
+                Accept terms and conditions</label>
+        </div>
+        <div class="choose-gender">
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" id="secret" name="gender" checked>
+            <label for="secret">Secret</label>
+        </div>
+        <div class="text-area">
+            <textarea maxlength="10" name="description" placeholder="Write description..."></textarea>
+        </div>
+        <div class="button">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
 </body>
 
 </html>
