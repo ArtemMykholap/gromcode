@@ -18,12 +18,12 @@ p {
     background-color: yellow;
 }
 
-input {
-    border: 3px red solid;
-}
-
 .hello {
     background-color: white;
+}
+
+input {
+    border: 3px red solid;
 }
 
 #special {
