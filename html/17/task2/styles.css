@@ -34,7 +34,7 @@ th {
     background-color: aqua;
 }
 
-tr:hover {
+tbody>tr:hover {
     color: white;
     background-color: #aaa;
 }
