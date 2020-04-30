@@ -24,11 +24,11 @@ table>tr.letters {
     border: none;
 }
 
-tr:nth-child(even) td:nth-child(even) {
+tr:nth-child(even) td:nth-child(odd) {
     background-color: black;
 }
 
-tr:nth-child(odd) td:nth-child(odd) {
+tr:nth-child(odd) td:nth-child(even) {
     background-color: black;
 }
 
