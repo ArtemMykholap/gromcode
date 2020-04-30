@@ -24,7 +24,6 @@ td {
 
 th,
 td {
-    box-sizing: border-box;
     padding: 4px;
     text-align: right;
     line-height: 31px;
