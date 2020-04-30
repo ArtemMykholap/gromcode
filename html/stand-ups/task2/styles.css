@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+.rectangles {
+    padding: 50px;
+    border: 2px solid black;
+}
+
+.blue {
+    background-color: blue;
+    margin: 50px;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.pink {
+    background-color: pink;
+}
