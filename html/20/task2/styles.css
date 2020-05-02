@@ -21,7 +21,6 @@ body {
     font: 700 16px Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     color: white;
-    vertical-align: middle;
 }
 
 @keyframes jump {
