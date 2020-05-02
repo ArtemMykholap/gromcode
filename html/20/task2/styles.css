@@ -17,7 +17,7 @@ body {
     font: 700 16px Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     color: white;
-    animation: jump .4s .5s ease-in-out, rotate .5s ease-in-out, moves 1s 2s ease forwards;
+    animation: jump .5s .4s ease-in-out, rotate .5s ease-in-out, moves 1s 2s ease forwards;
 }
 
 @keyframes jump {
