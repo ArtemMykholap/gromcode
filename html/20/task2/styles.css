@@ -9,7 +9,6 @@ body {
 
 .fancy-button {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     margin: auto;
     width: 150px;
@@ -18,7 +17,7 @@ body {
     background-image: linear-gradient(45deg, yellow, red);
     border: none;
     padding: 0;
-    /* animation: jump .5s .4s ease-in-out, rotate .5s ease-in-out, moves 1s 2s ease forwards; */
+    animation: jump .5s .4s ease-in-out, rotate .5s ease-in-out, moves 1s 2s ease forwards;
 }
 
 .text {
