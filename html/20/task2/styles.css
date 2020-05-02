@@ -8,6 +8,9 @@ body {
 }
 
 .fancy-button {
+    vertical-align: middle;
+    text-align: center;
+    padding: 0;
     margin: auto;
     width: 150px;
     height: 50px;
