@@ -10,20 +10,16 @@
 }
 
 .spinner {
-    font-size: 16px;
-    font-family: monospace;
-    text-transform: uppercase;
     animation: blinking 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-
-/* .spinner-text {
-    animation: blinking 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-} */
+.spinner-text {
+    font-size: 16px;
+    font-family: monospace;
+    text-transform: uppercase;
+}
 
 .rect {
     position: relative;
