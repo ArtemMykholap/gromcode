@@ -38,7 +38,7 @@
     border-top: 4px solid black;
     margin: auto;
     margin-bottom: 8px;
-    animation: rotate 2s linear;
+    animation: rotate 2s infinite linear;
 }
 
 @keyframes rotate {
