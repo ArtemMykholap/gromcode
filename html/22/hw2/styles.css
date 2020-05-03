@@ -16,6 +16,7 @@ html {
 
 img {
     max-width: 100%;
+    box-shadow: 0px 4px 8px 0px rgba( 0, 0, 0, 0.2);
 }
 
 .header {
@@ -97,4 +98,51 @@ img {
     justify-content: center;
     padding: 0.5em;
     background-color: #e5e5e5;
+}
+
+@media screen and (max-width:600px) {
+    .main {
+        display: block;
+    }
+    .navigation {
+        width: 100%;
+    }
+    .section {
+        width: 100%;
+    }
+    .news {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .main {
+        display: block;
+    }
+    .navigation {
+        display: block;
+        float: left;
+        width: 20%;
+    }
+    .section {
+        width: 80%;
+    }
+    .news {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .main {
+        display: flex;
+    }
+    .navigation {
+        width: 20%;
+    }
+    .section {
+        width: 60%;
+    }
+    .news {
+        width: 20%;
+    }
 }
