@@ -37,6 +37,7 @@ html {
 
 .nav-list-item {
     display: flex;
+    align-items: center;
     background-color: #808080;
     color: white;
     height: 2em;
@@ -60,10 +61,13 @@ html {
     color: #8b0000;
     background-color: #e5e5e5;
     font-weight: 700;
-    font-size: 112, 5%;
+    font-size: 112.5%;
 }
 
 .section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     width: 60%;
     padding: 0.5em;
     font-size: 1.25em;
