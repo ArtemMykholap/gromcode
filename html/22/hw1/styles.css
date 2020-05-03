@@ -26,6 +26,7 @@ html {
     outline: none;
     cursor: pointer;
     font-size: 2em;
+    background-color: #eee;
 }
 
 .navigation {
