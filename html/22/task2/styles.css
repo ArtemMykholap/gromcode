@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+span {
+    background-color: #faebd7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 8px;
+    border-radius: 4px;
+    text-transform: lowercase;
+    margin: auto;
+    padding: 8px;
+}
+
+.nav {
+    background-color: #ff7f50;
+    height: 200px;
+    display: flex;
+    flex-grow: 1;
+}
+
+.products {
+    background-color: #006400;
+    height: 200px;
+    display: flex;
+    flex-grow: 1;
+}
+
+.news {
+    background-color: #0ff;
+    height: 200px;
+    display: flex;
+    flex-grow: 1;
+}
+
+@media screen and (min-width:600px) {
+    .products-nav {
+        display: flex;
+        flex-grow: 2;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .container {
+        display: flex;
+    }
+}
