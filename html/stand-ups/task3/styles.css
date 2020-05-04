@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+.page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 40px;
+    background-color: yellow;
+}
+
+.dashboard {
+    height: 50px;
+    background-color: pink;
+    flex: 1;
+}
+
+.footer {
+    height: 40px;
+    background-color: green;
+}
