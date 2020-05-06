@@ -11,15 +11,63 @@
 .header {
     height: 40px;
     background-color: yellow;
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list__item {
+    margin-left: 16px;
+    line-height: 40px;
+}
+
+.main {
+    flex: 1;
+    display: flex;
 }
 
 .dashboard {
-    height: 50px;
+    display: flex;
     background-color: pink;
     flex: 1;
 }
 
+.title {
+    margin: auto;
+}
+
+.news {
+    display: flex;
+    background-color: grey;
+    flex-direction: column;
+    width: 200px;
+}
+
+.news-title {
+    margin: 16px;
+    text-align: center;
+}
+
+.news-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.news-list__item {
+    margin-left: 16px;
+    line-height: 40px;
+}
+
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 40px;
     background-color: green;
 }
