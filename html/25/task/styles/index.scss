@@ -8,7 +8,7 @@
         font-family: 'Montserrat', sans-serif;
     }
     
-    .tables {
+    body {
         background: #141B1C;
         display: flex;
         height: 100vh;
@@ -18,15 +18,19 @@
         color: #FFFFFF;
     }
     
+    .tables {
+        display: flex;
+        margin: auto;
+    }
+    
     .price-card {
-        margin-left: 18px;
+        margin: 9px;
         position: relative;
         display: flex;
         flex-direction: column;
         width: 380px;
         height: 770px;
         overflow: hidden;
-        border-radius: 6px;
         background: #334247;
         box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
         &__title {
