@@ -61,8 +61,8 @@
     
     .action {
         display: flex;
-        top: 26px;
-        right: -33px;
+        top: 30px;
+        right: -29px;
         position: absolute;
         align-items: center;
         justify-content: center;
@@ -78,18 +78,20 @@
     }
     
     .price-card__description {
-        font-weight: 200;
+        display: flex;
+        font-weight: 300;
         font-size: 15px;
-        margin: 40px 26px;
+        line-height: 18px;
+        margin: auto;
         text-align: center;
     }
     
     .price-card__options-list {
         list-style-type: none;
         font-size: 15px;
-        font-weight: 200;
+        font-weight: 300;
         li {
-            padding: 16px 0px;
+            padding: 15px 0px;
             img {
                 margin: 0 22px;
             }
