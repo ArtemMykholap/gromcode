@@ -37,16 +37,16 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
-            margin: auto;
+            margin: 33px auto;
             font-size: 35px;
             font-weight: 700;
-            line-height: 43px;
+            line-height: 40px;
             &-web {
                 display: flex;
                 justify-content: center;
                 font-size: 20px;
                 line-height: 24px;
-                font-weight: 200;
+                font-weight: 300;
             }
         }
         &__price {
@@ -61,8 +61,8 @@
     
     .action {
         display: flex;
-        top: 26px;
-        right: -33px;
+        top: 30px;
+        right: -29px;
         position: absolute;
         align-items: center;
         justify-content: center;
@@ -78,16 +78,19 @@
     }
     
     .price-card__description {
-        font-weight: 200;
+        display: flex;
+        font-weight: 300;
         font-size: 15px;
-        margin: 40px 26px;
+        line-height: 18px;
+        margin: auto 33px;
         text-align: center;
     }
     
     .price-card__options-list {
         list-style-type: none;
         font-size: 15px;
-        font-weight: 200;
+        line-height: 18px;
+        font-weight: 300;
         li {
             padding: 16px 0px;
             img {
