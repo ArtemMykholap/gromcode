@@ -8,10 +8,6 @@
         font-family: 'Montserrat', sans-serif;
     }
     
-    .price {
-        margin: 9px;
-    }
-    
     .tables {
         background: #141B1C;
         display: flex;
@@ -23,6 +19,7 @@
     }
     
     .price-card {
+        margin-left: 18px;
         position: relative;
         display: flex;
         flex-direction: column;
