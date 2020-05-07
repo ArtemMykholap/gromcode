@@ -1,4 +1,4 @@
-function getSpecialNumbers(from, to) {
+function getSpecialNumbers(m, n) {
     let specialNumbers = [];
     for (i = from; i <= to; i++) {
         if (i % 3 === 0) {
