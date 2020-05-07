@@ -10,7 +10,7 @@ function squareArray(jet) {
 
             square.push(jet[i] * jet[i]);
         }
-        console.log(square);
+        return (square);
     }
 
 }
