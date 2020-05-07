@@ -9,7 +9,7 @@ function checker(numbers) {
         let sum = minNumber + maxNumber;
         let check = sum > 1000;
 
-        console.log(check);
+        return check;
 
     }
 }
