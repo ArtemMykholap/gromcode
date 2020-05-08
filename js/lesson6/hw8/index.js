@@ -2,7 +2,7 @@ let numbers = [15, 27, 18, 24, 13];
 
 
 
-function sortAsc(numbers) {
+function sortAsc(array) {
     if (!Array.isArray(numbers)) {
         return null;
     }
@@ -19,7 +19,7 @@ function sortAsc(numbers) {
     return numbers;
 }
 
-function sortAsc(numbers) {
+function sortDesc(array) {
     if (!Array.isArray(numbers)) {
         return null;
     }
