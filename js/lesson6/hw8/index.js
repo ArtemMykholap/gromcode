@@ -1,20 +1,37 @@
 let numbers = [15, 27, 18, 24, 13];
 
 
+
 function sortAsc(numbers) {
-    const sort = a => {
-        let len = a.length - 1;
+    if (!Array.isArray(numbers)) {
+        return null;
+    }
+    for (let i = 0,
+            len = numbers.length - 1; i < len; i++) {
+        for (let j = 0, lenJ = len - i; j < lenJ; j++) {
+            if (numbers[j] > numbers[j + 1]) {
+                let trim = numbers[j];
+                numbers[j] = numbers[j + 1];
+                numbers[j + 1] = trim;
+            }
+        }
+    }
+    return numbers;
+}
 
-        for (let i = 0; i < len; i++)
-
-            for (let e = 0; e < len - i; e++)
-
-        if (a[e] > a[e + 1])
-
-            [a[e], a[e + 1]] = [a[e + 1], a[e]];
-
-        return a;
-    };
-
-    return (sort(numbers));
+function sortAsc(numbers) {
+    if (!Array.isArray(numbers)) {
+        return null;
+    }
+    for (let i = 0,
+            len = numbers.length - 1; i < len; i++) {
+        for (let j = 0, lenJ = len - i; j < lenJ; j++) {
+            if (numbers[j] > numbers[j - 1]) {
+                let trim = numbers[j];
+                numbers[j] = numbers[j - 1];
+                numbers[j - 1] = trim;
+            }
+        }
+    }
+    return numbers;
 }
