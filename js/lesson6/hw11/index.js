@@ -8,7 +8,7 @@ function includes(numbers, len) {
         if (numbers[i] === len) {
             a += 1;
         }
-        console.log(a > 0);
+        return a > 0;
     }
 
 
