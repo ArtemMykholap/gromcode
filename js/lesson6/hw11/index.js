@@ -8,8 +8,9 @@ function includes(numbers, len) {
         if (numbers[i] === len) {
             a++;
         }
-        return a > 0;
+
     }
+    return a > 0;
 
 
 }
