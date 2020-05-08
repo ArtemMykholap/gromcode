@@ -15,10 +15,10 @@ function sortDesc(numbers) {
     for (let i = 0,
             len = numbers.length - 1; i < len; i++) {
         for (let j = 0, lenJ = len - i; j < lenJ; j++) {
-            if (numbers[j] > numbers[j - 1]) {
+            if (numbers[j] < numbers[j + 1]) {
                 let trim = numbers[j];
-                numbers[j] = numbers[j - 1];
-                numbers[j - 1] = trim;
+                numbers[j] = numbers[j + 1];
+                numbers[j + 1] = trim;
             }
         }
     }
