@@ -24,6 +24,6 @@ function withdraw(clients, balances, client, amount) {
         }
 
     }
-    console.log(rest);
+    return rest;
 
 }
