@@ -3,12 +3,12 @@ let len = 3;
 
 
 function getSubArray(numbers, len) {
-    let sub = new Array(len);
+    let sub = [];
 
-    for (i = 0; i <= sub.length; i++) {
+    for (i = 0; i <= len - 1; i++) {
 
         sub.push(numbers[i]);
     }
-    console.log(sub);
+    return sub;
 
 }
