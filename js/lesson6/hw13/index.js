@@ -6,5 +6,5 @@ function uniqueCount(numbers) {
     }
     const unique = [...new Set(numbers)]
     const count = unique.length;
-    console.log(count);
+    return count;
 }
