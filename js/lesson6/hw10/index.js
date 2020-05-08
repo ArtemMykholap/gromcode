@@ -5,7 +5,7 @@ let len = 3;
 function getSubArray(numbers, len) {
     let sub = [];
 
-    for (i = 0; i <= len - 1; i++) {
+    for (let i = 0; i <= len - 1; i++) {
 
         sub.push(numbers[i]);
     }
