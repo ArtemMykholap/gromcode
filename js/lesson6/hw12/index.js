@@ -7,7 +7,7 @@ function removeDuplicates(numbers) {
     const uniqArray = [...new Set(numbers)];
 
 
-    console.log(uniqArray);
+    return uniqArray;
 
 
 }
