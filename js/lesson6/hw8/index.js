@@ -16,5 +16,5 @@ function sortAsc(numbers) {
         return a;
     };
 
-    console.log(sort(numbers));
+    return (sort(numbers));
 }
