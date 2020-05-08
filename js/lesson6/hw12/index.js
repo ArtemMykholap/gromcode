@@ -5,5 +5,6 @@ function removeDuplicates(numbers) {
         return null;
     }
     const uniqArray = [...new Set(numbers)];
+
     return uniqArray;
 }
