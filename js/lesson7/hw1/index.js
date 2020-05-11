@@ -5,9 +5,9 @@ const squareArray = numbers => {
     if (!Array.isArray(numbers)) {
         return null;
     } else {
-        numbers.forEach(function(elem) {
-            container.push(elem *= elem);
-        });
-        return container;
-    }
+        container = numbers.map(item => item * item);
+        return container
+    };
+
+
 }
