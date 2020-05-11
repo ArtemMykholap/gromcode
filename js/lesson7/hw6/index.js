@@ -1,7 +1,7 @@
 const sumNumber = [1, 2, 3, 4, 20, 40];
 
 
-const sum = (numbers) => {
+const sum = numbers => {
 
     if (!Array.isArray(numbers)) {
         return null;
