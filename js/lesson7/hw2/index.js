@@ -5,8 +5,8 @@ const reverseArray = numbers => {
     if (!Array.isArray(numbers)) {
         return null;
     } else {
-        const container = numbers.reverse();
-        return container;
+        numbers.slice().reverse();
+        return numbers;
     };
 
 
