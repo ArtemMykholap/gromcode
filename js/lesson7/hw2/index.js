@@ -6,7 +6,7 @@ const reverseArray = numbers => {
         return null;
     } else {
         const container = numbers.reverse();
-        return container
+        return container;
     };
 
 
