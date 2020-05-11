@@ -8,6 +8,6 @@ const squareArray = numbers => {
         numbers.forEach(function(elem) {
             container.push(elem *= elem);
         });
-        console.log(container);
+        return container;
     }
 }
