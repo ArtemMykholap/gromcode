@@ -2,10 +2,9 @@ const names = ['John', 'Olivya', 'Oleksandr', 'Emanuel', 'Vanya', 'Nastya'];
 const text = 'ya';
 let arr = [];
 
-names.filter(function(names, text) {
-    if (names.length > 5)
-        if (names == ) {
-            arr++;
-        }
-    console.log(arr);
-});
+const filterNames = (names, text) = names.filter()
+if (names.length > 5)
+    if (names === text) {
+        arr++;
+    }
+console.log(arr);;
