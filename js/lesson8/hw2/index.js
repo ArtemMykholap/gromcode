@@ -7,8 +7,8 @@ user.hobby = 'football';
 user['married'] = false;
 user['favorite music'] = 'rock';
 user.address = {};
-user.adress.country = 'Ukraine';
-user.adress.building = '17';
+user.address.country = 'Ukraine';
+user.address.building = '17';
 
 
 console.log(user);
