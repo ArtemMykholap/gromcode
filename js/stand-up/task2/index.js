@@ -16,10 +16,14 @@ for (let i = m; i <= n; i++) {
         continue;
     }
     if (i % 3 === 0) {
-
+        // console.log("2 if is called for number " + i);
         result -= i;
+        continue;
     }
-    if (i % 2 === 0) {
-        result += i
+    if (i % 4 === 0) {
+        // console.log("3 if is called for number " + i);
+        result *= i;
+        continue;
     }
 }
+console.log(result);
