@@ -25,4 +25,5 @@ for (let i = m; i <= n; i++) {
         result *= i;
         continue;
     }
+    return result;
 }
