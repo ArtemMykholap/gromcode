@@ -26,4 +26,3 @@ for (let i = m; i <= n; i++) {
         continue;
     }
 }
-console.log(result);
