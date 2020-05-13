@@ -7,11 +7,10 @@ const obj = {
 
 
 const concatProps = obj => {
-    arr = [];
+    const arr = [];
     for (let key in obj) {
 
         arr.push(obj[key]);
     }
     return arr;
 };
-console.log(concatProps(obj));
