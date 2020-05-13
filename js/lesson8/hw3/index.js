@@ -3,8 +3,8 @@ const user = {
     age: 17,
 };
 
-function getKey(user) {
+function getKeys(user) {
     let arr = Object.keys(user);
     return (arr.forEach(pomp => console.log(pomp)));
 }
-getKey(user);
+getKeys(user);
