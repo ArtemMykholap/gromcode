@@ -6,7 +6,7 @@ const user = {
 user.hobby = 'football';
 user['married'] = false;
 user['favorite music'] = 'rock';
-user.adress = {};
+user.address = {};
 user.adress.country = 'Ukraine';
 user.adress.building = '17';
 
