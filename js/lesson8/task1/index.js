@@ -1,4 +1,4 @@
-const arr = ['a', 17.1, 'John Doe', ];
+const arr = ['a', 17.1, 'John Doe'];
 const thransformToObject = arr => {
     let obj = {};
     arr.forEach(el => {
