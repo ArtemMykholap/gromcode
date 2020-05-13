@@ -2,7 +2,6 @@ const userData = {
     name: 'Tom',
 };
 
-userId = '11111';
 
 const addPropertyV1 = (userData, userId) => {
     userData.id = userId;
@@ -23,8 +22,10 @@ const addPropertyV3 = (userData, userId) => {
 
 const addPropertyV4 = (userData, userId) => {
 
-    let userDataCopy = {...userData };
-    userDataCopy.id = userId;
-    let userDataNew = {...userData, ...userDataCopy };
-    return userDataNew;
+    let userDataCopy = { id: userId };
+
+    return Object.assign({...userData }, userDataCopy);
+
 };
+const result = addPropertyV4(userData, '43434343');
+console.log(result);
