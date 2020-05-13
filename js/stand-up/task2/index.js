@@ -1,5 +1,5 @@
 let m = 10;
-let n = 40;
+let n = 50;
 let result = 0;
 
 for (let i = m; i <= n; i++) {
@@ -23,8 +23,8 @@ for (let i = m; i <= n; i++) {
     if (i % 4 === 0) {
         // console.log("3 if is called for number " + i);
         result *= i;
+        continue;
 
     }
 
 }
-return result;
