@@ -29,3 +29,5 @@ const addPropertyV4 = (userData, userId) => {
     let userDataNew = {...userData, ...userDataCopy };
     return userDataNew;
 }
+const result = addPropertyV4(userData, '12345');
+console.log(result);
