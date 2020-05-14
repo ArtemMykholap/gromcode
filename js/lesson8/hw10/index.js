@@ -7,9 +7,9 @@ const obj = {
 
 const getAdults = obj => {
     let searchPerson = {};
-    for (key in obj) {
+    for (let key in obj) {
         if (obj[key] >= 18) {
-            searchPerson[key] = obj[key]
+            searchPerson[key] = obj[key];
         }
     }
     return searchPerson;
