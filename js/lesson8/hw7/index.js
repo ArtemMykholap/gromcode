@@ -7,7 +7,7 @@ const obj2 = {
     student: true,
 };
 
-let conpareObjects = (obj1, obj2) => {
+let compareObjects = (obj1, obj2) => {
     const entriesArr1 = Object.entries(obj1).flat();
     const entriesArr2 = Object.entries(obj2).flat();
     // if (entriesArr1.length !== entriesArr2.length) {
