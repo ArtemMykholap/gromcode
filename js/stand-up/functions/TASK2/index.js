@@ -15,16 +15,18 @@
 // algo
 // 1. iterate from 1 to num;
 // 2. if num%i !==0;
-function isPrime(num) {
-    for (let i = 2; i < num; i++) {
-        // console.log('Check for: ' + i);
-        if (num % i === 0) {
+function isPrime(n) {
+    for (let i = 2; i < n; i++) {
+        console.log('check for: ' + i);
+        if (n % i === 0) {
+            console.log('if is called for: ' + i)
+
             return false;
         }
     }
+    console.log('loop is finished ')
     return true;
 }
-
 
 
 // input: Number
@@ -35,9 +37,8 @@ function isPrime(num) {
 // 2. wrute func that checks is number prime;
 // 3.if number is prime-print it
 
-function getPrimes(num) {
+function getPrimes(n) {
     for (let i = 1; i <= n; i++) {
-
         if (isPrime(i)) {
             console.log(i);
         }
