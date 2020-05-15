@@ -15,7 +15,8 @@ let customers = {
 
 
 const getCustomersList = customers => {
-    const keysCustomers = Object.entries(customers);
+    let keysCustomers = Object.assign({}, customers);
+    keysCustomers = Object.entries(customers);
     const arr = [];
 
     for (let customer in keysCustomers) {
