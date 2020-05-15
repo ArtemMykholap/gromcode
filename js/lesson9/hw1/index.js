@@ -13,8 +13,9 @@ const customers = {
 
 const getCustomersList = customers => {
     const keysCustomers = Object.keys(customers);
+    for (let key in customers) {
 
-
+    }
     customers['customer-id-1']['id'] = keysCustomers[1];
     customers['customer-id-2']['id'] = keysCustomers[0];
 
