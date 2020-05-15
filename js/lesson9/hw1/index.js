@@ -14,7 +14,7 @@ let customers = {
 };
 
 
-const getCustomersListArtem = customers => {
+const getCustomersList = customers => {
     const keysCustomers = Object.entries(customers);
     const arr = [];
 
