@@ -16,14 +16,16 @@ let customers = {
 
 const getCustomersList = customers => {
 
-    const keysCustomers = Object.entries(customers);
+    let keysCustomers = Object.entries(customers);
+    let keysCustomersArr = [...keysCustomers];
+
     const arr = [];
 
-    for (let customer in keysCustomers) {
-        let object = Object.assign({}, keysCustomers);
-        object = keysCustomers[customer][1];
+    for (let customer in keysCustomersArr) {
+        // let object = Object.assign({}, keysCustomers);
+        object = keysCustomersArr[customer][1];
 
-        object.id = keysCustomers[customer][0];
+        object.id = keysCustomersArr[customer][0];
         arr.push(object);
     }
 
