@@ -13,20 +13,18 @@ let customers = {
     }
 };
 
-
 const getCustomersList = customers => {
 
-    let keysCustomers = Object.entries(customers);
-    let keysCustomersArr = [...keysCustomers];
-
+    const keysCustomers = Object.entries(customers);
     const arr = [];
 
-    for (let customer in keysCustomersArr) {
-        // let object = Object.assign({}, keysCustomers);
-        object = keysCustomersArr[customer][1];
+    for (let customer in keysCustomers) {
+        let object = Object.assign({}, keysCustomers);
 
-        object.id = keysCustomersArr[customer][0];
-        arr.push(object);
+        let objectNew = object[customer][1];
+
+        objectNew.id = object[customer][0];
+        arr.push(objectNew);
     }
 
     return arr.sort((a, b) => a.age - b.age);
