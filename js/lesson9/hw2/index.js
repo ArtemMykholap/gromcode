@@ -1,3 +1,13 @@
+// input:object
+// output:array
+
+// algo
+// 1.преобразуем объект в массив в массив объектов
+// 2. сделаем плоским
+// 3. переберем объекты массива для вывода значения нэйм
+
+
+
 rooms = {
     room1: [
         { name: 'room1 name1' },
@@ -20,7 +30,7 @@ rooms = {
 };
 
 const getPeople = object => {
-    let arr = Object.values(object).flat().map(({ name }) => name);
+    let arr = Object.values(object).flat().map(object => object.name);
     return arr;
 }
 let result = getPeople(rooms);
