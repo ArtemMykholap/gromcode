@@ -25,6 +25,7 @@ const getCustomersList = customers => {
         arr.push(object);
     }
 
-    return arr.sort((a, b) => b.age - a.age);
+    return arr.sort((a, b) => a.age - b.age);
+
 }
 console.log(getCustomersList(customers));
