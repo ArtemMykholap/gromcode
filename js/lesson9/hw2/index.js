@@ -22,6 +22,6 @@ rooms = {
 const getPeople = object => {
     let arr = Object.values(object).flat().map(({ name }) => name);
     return arr;
-
 }
-getPeople(rooms);
+let result = getPeople(rooms);
+console.log(result);
