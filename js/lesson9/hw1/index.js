@@ -1,32 +1,30 @@
-const customers = {
+let customers = {
     'customer-id-1': {
         name: 'William',
-        age: 54
+        age: 54,
     },
     'customer-id-2': {
         name: 'Tom',
-        age: 17
+        age: 17,
     },
-
-}
-
-
-const getCustomersList = customers => {
-    const keysCustomers = Object.keys(customers);
-    for (let key in customers) {
-
+    'customer-id-3': {
+        name: 'Tom',
+        age: 20,
     }
-    customers['customer-id-1']['id'] = keysCustomers[1];
-    customers['customer-id-2']['id'] = keysCustomers[0];
-
-    const objectGeneral = Object.entries(customers);
-    objectGeneral[0].shift();
-    objectGeneral[1].shift();
-    const objectsMerge = objectGeneral[0].concat(objectGeneral[1]);
+};
 
 
-    return objectsMerge.sort((a, b) => a.age > b.age ? 1 : -1);
+const getCustomersListArtem = customers => {
+    const keysCustomers = Object.entries(customers);
+    const arr = [];
 
+    for (let customer in keysCustomers) {
+        const object = keysCustomers[customer][1];
 
+        object.id = keysCustomers[customer][0];
+        arr.push(object);
+    }
+
+    return arr.sort((a, b) => b.age - a.age);
 }
-getCustomersList(customers)
+console.log(getCustomersList(customers));
