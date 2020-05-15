@@ -1,3 +1,14 @@
+// input:Object
+// output:array
+
+// 1.преобразуем объект в массив массивов
+// 2.создать новый объект
+// 3. деструктурировать и присвоить значения полю айди сортировать
+// 4. сортировать массив и вернуть
+
+
+
+
 let customers = {
     'customer-id-1': {
         name: 'William',
@@ -13,21 +24,12 @@ let customers = {
     }
 };
 
-const getCustomersList = customers => {
+function getCustomersList(users) {
+    // console.log(users);
 
-    const keysCustomers = Object.entries(customers);
-    const arr = [];
-
-    for (let customer in keysCustomers) {
-        let object = Object.assign({}, keysCustomers);
-
-        let objectNew = object[customer][1];
-
-        objectNew.id = object[customer][0];
-        arr.push(objectNew);
-    }
-
-    return arr.sort((a, b) => a.age - b.age);
-
+    return Object.entries(users)
+        .map(([id, customer]) => ({ id, ...customer }))
+        .sort((fisrt, second) => fisrt.age - second.age)
 }
+
 console.log(getCustomersList(customers));
