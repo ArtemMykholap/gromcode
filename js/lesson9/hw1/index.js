@@ -20,7 +20,7 @@ const getCustomersList = customers => {
     const arr = [];
 
     for (let customer in keysCustomers) {
-        let object = Object.assign({}, customers);
+        let object = Object.assign({}, keysCustomers);
         object = keysCustomers[customer][1];
 
         object.id = keysCustomers[customer][0];
