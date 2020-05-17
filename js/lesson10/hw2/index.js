@@ -9,22 +9,27 @@
 // вернуть заполненный массив;
 // 
 let lengthArray = 5;
-let start = 0;
-let finish = 10;
+let start = -4.1;
+let finish = -5;
 
 function getRandomNumbers(lengthArray, start, finish) {
-    let newArr = [];
-
-    for (let i = 0; i < lengthArray; i++) {
-        start = Math.ceil(start);
-        finish = Math.floor(finish);
-        newArr.push(Math.floor(Math.random() * (finish - start) + start));
-    }
-    if (newArr.reduce((sum, current) => sum + current) === 0) {
+    if (Math.abs(start - finish) < 1) {
         return null;
     }
+    let newArr = [];
+    start = Math.ceil(start);
+    finish = Math.floor(finish);
+    for (let i = 0; i < lengthArray; i++) {
+        newArr.push(Math.floor(Math.random() * (finish - start) + start));
+    }
     return newArr;
-
 }
 const result = getRandomNumbers(lengthArray, start, finish);
 console.log(result);
+
+
+
+
+// if (newArr.reduce((sum, current) => sum + current) === 0) {
+//     return null;
+// // }
