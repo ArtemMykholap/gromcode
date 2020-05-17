@@ -23,7 +23,8 @@ function getRandomNumbers(lengthArray, start, finish) {
     if (newArr.reduce((sum, current) => sum + current) === 0) {
         return null
     }
-    console.log(newArr);
+    return newArr;
 
 }
-console.log(getRandomNumbers(lengthArray, start, finish));
+const result = getRandomNumbers(lengthArray, start, finish);
+console.log(result);
