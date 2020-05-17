@@ -4,7 +4,7 @@
 
 
 const text = 'abcdefggsdfkdsiuew8372479237uwer';
-let n;
+let n = 6;
 
 const splitString = (text, n = 10) => {
     if (typeof text !== 'string') {
