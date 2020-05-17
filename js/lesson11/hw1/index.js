@@ -6,7 +6,7 @@
 const text = 'abcdefggsdfkdsiuew8372479237uwer';
 let n;
 
-const splitText = (text, n = 10) => {
+const splitString = (text, n = 10) => {
     if (typeof text !== 'string') {
         return null;
     }
@@ -25,4 +25,4 @@ const splitText = (text, n = 10) => {
     }
     return newArr.join('\n');
 }
-console.log(splitText(text, n));
+console.log(splitString(text, n));
