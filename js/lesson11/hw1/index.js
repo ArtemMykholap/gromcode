@@ -4,7 +4,7 @@
 
 
 const text = 'abcdefggsdfkdsiuew8372479237uwer';
-let n = 6;
+let num = 6;
 
 const splitString = (text, n = 10) => {
     if (typeof text !== 'string') {
@@ -19,10 +19,10 @@ const splitString = (text, n = 10) => {
         }
         if (chunk.length < n) {
             chunk = chunk + '.'.repeat(n - chunk.length);
-        }
-        newArr.push(chunk[0].toUpperCase() + chunk.slice(1));
+        };
+        newArr.push(chunk);
         startPosition += n;
     }
-    return newArr.join('\n');
+    return newArr;
 }
-console.log(splitString(text, n));
+console.log(splitString(text, num));
