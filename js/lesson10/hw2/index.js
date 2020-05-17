@@ -21,7 +21,7 @@ function getRandomNumbers(lengthArray, start, finish) {
         newArr.push(Math.floor(Math.random() * (finish - start) + start));
     }
     if (newArr.reduce((sum, current) => sum + current) === 0) {
-        return null
+        return null;
     }
     return newArr;
 
