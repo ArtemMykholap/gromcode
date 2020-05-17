@@ -1,7 +1,7 @@
-const text = 'abcdefg';
-const n = 4;
+const text = 'abcdefggsdfkdsiuew8372479237uwer';
+const n = 2;
 
-const splitText = (text, n) => {
+const splitText = (text, n = 10) => {
     if (typeof text !== 'string') {
         return null;
     }
