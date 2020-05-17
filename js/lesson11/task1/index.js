@@ -16,6 +16,6 @@ const splitText = (text, n = 10) => {
         newArr.push(chunk[0].toUpperCase() + chunk.slice(1));
         startPosition += n;
     }
-    return newArr;
+    return newArr.join('\n');
 }
 console.log(splitText(text, n));
