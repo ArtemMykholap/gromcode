@@ -1,5 +1,3 @@
-let str = 1 + 2
-
 const calc = expression => {
     const [a, operator, b] = expression.split(' ');
     let result;
@@ -23,5 +21,3 @@ const calc = expression => {
     }
     return `${expression}=${result}`;
 };
-
-console.log(calc('6 - 9'));
