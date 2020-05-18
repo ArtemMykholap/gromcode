@@ -1,6 +1,6 @@
 let arr = [1, 2, 3, 4];
 
-const squareArray1 = arr => {
+const squareArray = arr => {
     if (!Array.isArray(arr))
         return null;
 
