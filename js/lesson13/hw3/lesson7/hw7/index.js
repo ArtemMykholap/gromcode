@@ -8,6 +8,8 @@ export const filterNames = (names, text) => {
     })
     return arr;
 
+
+
 }
 
 console.log(filterNames(names, text));
