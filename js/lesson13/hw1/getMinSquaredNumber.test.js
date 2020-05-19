@@ -1,5 +1,4 @@
 import { getMinSquaredNumber } from './getMinSquaredNumber.js'
-import { getSquaredArray } from '../task2/calculator.js'
 
 it('should get null if empty array', () => {
     const result = getMinSquaredNumber([]);
