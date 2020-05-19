@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ArtemMykholap/gromcode/issues"
   },
-  "homepage": "https://github.com/ArtemMykholap/gromcode#readme"
+  "homepage": "https://github.com/ArtemMykholap/gromcode#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6"
+  }
 }
