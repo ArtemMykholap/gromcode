@@ -9,7 +9,7 @@
   });
 
 
-  it('should return empty array if there are no matching elementse ', () => {
+  it('should return empty array if there are no matching elements ', () => {
       const result = filterNames(['John', 'Olivya', 'Oleksandr', 'Emanuel', 'Vanya', 'Nastya'], 'der');
       expect(result).toEqual([]);
   });
@@ -18,4 +18,5 @@
   it('should return length of elements ', () => {
       const result = filterNames(['John', 'Olivya', 'Oleksandr', 'Emanuel', 'Vanya', 'Nastya'], 'ya');
       expect(result[1].length > 5).toEqual(true);
+
   });
