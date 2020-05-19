@@ -4,7 +4,6 @@
 
   it('should return typeof result', () => {
       const result = filterNames(['John', 'Olivya', 'Oleksandr', 'Vanya', 'Nastya'], 'ya');
-
       expect(typeof result !== 'string').toEqual(true);
   });
 
