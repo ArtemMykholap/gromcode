@@ -1,10 +1,10 @@
 const createMessenger = () => {
 
-    let message = 'Just learn it';
+    let message = 'Just learn it!';
     let sender = 'Gromcode';
 
     function sendMessage(name) {
-        console.log(`${name}, ${message}\! Your ${sender}`);
+        console.log(`${name}, ${message} Your ${sender}`);
     };
 
     function setMessage(text) {
@@ -33,7 +33,7 @@ const messenger3 = createMessenger();
 messenger1.sendMessage('Bob');
 // messenger1.setMessage('1232131'); //не поменяет ничего,т.к. берет из изначально объявленной .
 
-messenger2.setMessage('Good job');
+messenger2.setMessage('Good job!');
 messenger2.sendMessage('Bob');
 
 
