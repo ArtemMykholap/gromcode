@@ -13,5 +13,5 @@ it('should return sum', () => {
     const check = createCalculator();
     check.add(10);
     let result = check.getMemo();
-    expect(result).toEqual(0);
+    expect(result).toEqual(10);
 });

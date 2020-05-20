@@ -2,9 +2,11 @@
 // output:number;
 
 
-let memory = 0;
+
 
 function createCalculator() {
+
+    let memory = 0;
 
     function add(number) {
         return memory += number;
