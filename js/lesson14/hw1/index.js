@@ -24,12 +24,6 @@ function reset(number) {
 function getMemo() {
     return memory;
 }
-return {
-    add,
-    decrease,
-    reset,
-    getMemo,
-}
 
 
 // let total = calc();
