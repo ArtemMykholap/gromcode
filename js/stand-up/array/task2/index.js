@@ -95,7 +95,7 @@ console.log(squaredNumbers);
 // c помощью метода filter создайте новый массив evenNumbers, в котором только четные числа из numbersList
 // выведите evenNumbers в консоль
 
-const numbersList1 = [1, 2, 3, 4, 5];
+const numbersList2 = [1, 2, 3, 4, 5];
 console.log('before' + numbersList1);
 // let callback = function() {
 //     if (el > 100) {
@@ -103,24 +103,63 @@ console.log('before' + numbersList1);
 //     } else
 //         return false;
 // }
-const filtered = numbersList1.filter((el) => el > 2);
-console.log('After' + filtered);
+const filtered = numbersList2.filter((el, index, array) => {
 
+    console.log('After' + filtered);
+    console.log(index);
+    console.log(array);
+
+    return el % 2 === 0;
+});
 
 
 // ... code here
 
 
 /* метод find */
-/* const arrElement = arr.filter(callback) - вернет первый элемент массива arr, который удовлетворяет условию в callback. */
+/* const arrElement = arr.find(callback) - вернет первый элемент массива arr, который удовлетворяет условию в callback. */
 /* ф-ция callback запустится по очереди для каждого элемента начального массива arr */
-/* если callback(arr[i]) вернет true, то filter прекратит поиск и вернет этот элемент */
+/* если callback(arr[i]) вернет true, то find прекратит поиск и вернет этот элемент */
 
 // c помощью метода find найдите первое нечетное число в numbersList и выведите его в консоль
 
 // ... code here
 
+const numbers = [1, 2, 3, 4, 5, 100, 40, 44, 55, 143];
+const res = numbers.find((el) => (el > 50));
+console.log('After' + res);
+
 
 
 
 //forEach
+
+const numbers1 = [1, 2, 3, 4, 5, 100, 40, 44, 55, 1234];
+const res = numbers.find((el) => (el > 50));
+console.log('After' + res);
+
+
+
+//reduce
+//reduce:
+
+console.log('before reduce ');
+let res6 = numbers.reduce((acc, el, index) => {
+    console.log('STEP ' + index + ' acc is: ' + acc);
+    return acc += el;
+}, 0);
+console.log(res6);
+console.log('After reduce ');
+
+
+
+
+console.log('before reduce 2');
+numbers.reduce((acc, el, index) => {
+    console.log('STEP ' + index + ' acc is: ' + acc);
+    if (el % 2 === 0);
+    acc.push(el);
+    return acc;
+}, []);
+console.log(res6);
+console.log('After reduce 2');
