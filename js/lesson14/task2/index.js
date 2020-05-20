@@ -21,6 +21,7 @@ const createMessenger = () => {
         setSender,
     };
 };
+export default createMessenger;
 
 
 // const messenger = createMessenger();
