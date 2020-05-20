@@ -9,7 +9,7 @@ export function createLogger() {
         let warn = {
             message: text,
             dateTime: new Date(),
-            'type': 'warn'
+            type: 'warn'
         }
 
         return memory.push(warn);
@@ -29,13 +29,13 @@ export function createLogger() {
         let log = {
             message: text,
             dateTime: new Date(),
-            'type': 'log'
+            type: 'log'
         }
         return memory.push(log);
     }
 
-    function getRecords() {
-        return memory.sort((a, b) => b.dateTime - a.dateTime);
+    function getRecords(type) {
+        return memory.filter(i => i.type === type).sort((a, b) => b.dateTime - a.dateTime);
     }
     return {
         log,

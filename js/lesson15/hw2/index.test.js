@@ -13,4 +13,4 @@ it('return error message', () => {
     let result = errorTest.getRecords('error');
     expect(result[0].message).toEqual('This message it`s dumb');
 
-})
+});
