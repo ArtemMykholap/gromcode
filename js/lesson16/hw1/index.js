@@ -18,6 +18,6 @@ function createArrayOfFunctions(num) {
     }
     return arr
 }
-
+export { createArrayOfFunctions }
 
 console.log(createArrayOfFunctions(100)[20]());
