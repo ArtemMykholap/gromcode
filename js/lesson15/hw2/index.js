@@ -107,8 +107,6 @@ function createLogger() {
         return res.sort((a, b) => b.dateTime - a.dateTime);
 
 
-
-
         // return memory(type).sort((a, b) => b - a);
         //  return memory.sort((a, b) => b.localeCompare(a))
         // return memory.sort((a, b) => b.dateTime - a.dateTime);
