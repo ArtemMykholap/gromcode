@@ -34,9 +34,9 @@ export function createLogger() {
     function getRecords(type) {
 
         if (!type) {
-            return memory;
+            return memory.sort((a, b) => b.dateTime - a.dateTime);
         }
-        return memory.filter(el => el.type === type).sort((a, b) => a.dateTime - b.dateTime);
+        return memory.filter(el => el.type === type).sort((a, b) => b.dateTime - a.dateTime);
 
     }
     return {
