@@ -7,16 +7,17 @@ let arr = []
 function createArrayOfFunctions(num) {
     if (typeof num === NaN) {
         return null;
-    } else if (!num) {
+    } else if (num === undefined) {
+        return arr;
+    } else {
+        for (let i = 0; i < num; i++) {
+            arr[i] = function() {
+
+                return i;
+            }
+        }
         return arr;
     }
-    for (let i = 0; i < num; i++) {
-        arr[i] = function() {
-
-            return i
-        }
-    }
-    return arr
 }
 export { createArrayOfFunctions }
 
