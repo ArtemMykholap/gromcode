@@ -6,7 +6,7 @@
 
 export function createArrayOfFunctions(num) {
     let arr = []
-    if (typeof num === NaN) {
+    if (typeof num == NaN) {
         return null;
     } else if (num === undefined) {
         return arr;
@@ -20,4 +20,3 @@ export function createArrayOfFunctions(num) {
         return arr;
     }
 }
-// export { createArrayOfFunctions }
