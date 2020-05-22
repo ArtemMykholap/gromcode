@@ -1,10 +1,10 @@
- const user = {
+ export const user = {
      firstName: 'John',
      lastName: 'Doe',
      getFullName() {
          return (`${this.firstName} ${this.lastName}`);
      }
  };
- export { user }
 
- user.getFullName();
+
+ //  user.getFullName();
