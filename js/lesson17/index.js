@@ -7,4 +7,4 @@
  };
  export { user }
 
- // user.getFullName();
+ user.getFullName();
