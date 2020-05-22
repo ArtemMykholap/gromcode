@@ -6,7 +6,7 @@
 
 export function createArrayOfFunctions(num) {
     let arr = []
-    if (typeof num !== Number) {
+    if (typeof num !== 'number') {
         return null;
     } else if (num === undefined) {
         return arr;
