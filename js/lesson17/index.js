@@ -2,7 +2,7 @@
      firstName: 'John',
      lastName: 'Doe',
      getFullName() {
-         return (`${this.firstName} ${this.lastName}`);
+         return `${this.firstName} ${this.lastName}`;
      }
  };
 
