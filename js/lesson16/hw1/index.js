@@ -4,7 +4,7 @@
 
 
 
-function createArrayOfFunctions(num) {
+export function createArrayOfFunctions(num) {
     let arr = []
     if (typeof num === NaN) {
         return null;
@@ -20,6 +20,4 @@ function createArrayOfFunctions(num) {
         return arr;
     }
 }
-export { createArrayOfFunctions }
-
-console.log(createArrayOfFunctions(100)[20]());
+// export { createArrayOfFunctions }
