@@ -1,4 +1,4 @@
-const user = {
+export const user = {
     firstName: 'John',
     lastName: 'Doe',
     getFullName() {
@@ -7,4 +7,3 @@ const user = {
 };
 
 user.getFullName();
-export { user }
