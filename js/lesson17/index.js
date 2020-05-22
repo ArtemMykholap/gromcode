@@ -5,6 +5,8 @@
          return `${this.firstName} ${this.lastName}`
      }
  };
-
+ const res = user.getFullName.bind(user);
+ console.log(user.getFullName());
+ console.log(res());
 
  //  user.getFullName();
