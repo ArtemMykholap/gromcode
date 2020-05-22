@@ -2,9 +2,10 @@
 // output:number
 
 
-let arr = []
+
 
 function createArrayOfFunctions(num) {
+    let arr = []
     if (typeof num === NaN) {
         return null;
     } else if (num === undefined) {
