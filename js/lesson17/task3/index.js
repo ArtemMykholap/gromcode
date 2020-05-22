@@ -1,6 +1,6 @@
 // defer(func,ms)=> Function
 
-function defer(func, ms) {
+export function defer(func, ms) {
     return function() {
         setTimeout(() => func.apply(this, arguments), ms);
     }
