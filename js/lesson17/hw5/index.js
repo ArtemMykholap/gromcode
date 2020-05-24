@@ -1,7 +1,7 @@
 export let timer = {
     secondsPassed: 0,
     minsPassed: 0,
-    timerId = 0,
+    timerId: 0,
     startTimer() {
         this.timerId = setInterval(() => {
             this.secondsPassed++;
@@ -21,10 +21,15 @@ export let timer = {
 
     },
     stopTimer() {
-        clearInterval(this.timerId);
+        clearInterval(this.id);
     },
     resetTimer() { //nullfy
         this.secondsPassed = 0;
         this.minsPassed = 0;
     },
 }
+
+// console.log(timer.getTime()
+// )
+// console.log(timer. stopTimer()
+// )
