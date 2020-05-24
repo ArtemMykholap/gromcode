@@ -12,7 +12,7 @@ export let timer = {
         }, 1000); //interval seconds
     },
     getTime() {
-        return (`${this.minsPassed} : ${this.secondsPassed < 10 ? '0' + this.secondsPassed : this.secondsPassed}`);
+        return (`${this.minsPassed}:${this.secondsPassed < 10 ? '0' + this.secondsPassed:this.secondsPassed}`)
 
         // if (this.secondsPassed < 10) {
         //     console.log('0' + this.secondsPassed);
