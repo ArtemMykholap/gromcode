@@ -34,9 +34,9 @@ function summator(a, b) {
 
 
 
-function twice(a) {
-    const funcTwice = calculator.bind({ operation: '+' }, [2]);
-    return funcTwice(a)
+function twice(a, b) {
+    const funcTwice = calculator.bind({ operation: '+' });
+    return funcTwice(a, b)
 }
 export { twice, summator, multiplier }
 // console.log(twice(3))
