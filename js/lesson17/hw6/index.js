@@ -33,11 +33,14 @@ function summator(a, b) {
 
 
 
+
 function twice(a) {
     const funcTwice = calculator.bind({ operation: '*' }, [2]);
     return funcTwice(a)
 }
-//    console.log(twice(8))
+export { twice, summator, multiplier }
+// console.log(twice(3))
+
 
 
 
