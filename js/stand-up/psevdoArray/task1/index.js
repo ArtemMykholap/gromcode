@@ -23,8 +23,7 @@
 
 function multiply2() {
     let args = arguments;
-    console.log(args);
+
 
     return [...args].reduce((acc, el) => acc * el)
 }
-console.log(multiply2(123, 123, 123));
