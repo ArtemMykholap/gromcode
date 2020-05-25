@@ -37,6 +37,7 @@ function twice(a) {
     //  const funcTwice=calculator.bind({operation:'*'});
     return a * 2
 }
+export { twice, summator, multiplier }
 // console.log(twice(3))
 
 
