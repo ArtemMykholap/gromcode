@@ -3,14 +3,14 @@
 
 
 
-function saveCalls(memoFunc) {
+function saveCalls(memoryFunction) {
 
     withMemory.calls = [];
 
-    function withMemory(...args) {
-        withMemory.calls.push(args);
+    function withMemory(...argums) {
+        withMemory.calls.push(argums);
         // console.log( withMemory.calls.push(args))
-        return memoFunc.call(this, arguments);
+        return memoryFunction.call(this, arguments);
     }
 
 
