@@ -1,9 +1,15 @@
 // input: function
-// output: func
+// output: function
+
+// algo
+// in  own function create method with value=[]
+//  push all the elements arguments to the function in empty array
+// return function  with method call and shown this and arguments
 
 
 
-function saveCalls(memoryFunction) {
+
+export function saveCalls(memoryFunction) {
 
     withMemory.calls = [];
 
