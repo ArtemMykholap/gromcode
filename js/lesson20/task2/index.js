@@ -1,4 +1,4 @@
-class Vehicle {
+export class Vehicle {
     constructor(name, numberOfWheels) {
         this.numberOfWheels = numberOfWheels;
         this.name = name;
@@ -12,7 +12,7 @@ class Vehicle {
     }
 };
 
-class Ship extends Vehicle {
+export class Ship extends Vehicle {
     constructor(name, maxSpeed, numberOfWheels, ) {
         super(name, numberOfWheels);
         this.maxSpeed = maxSpeed;
