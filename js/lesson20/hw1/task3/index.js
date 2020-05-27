@@ -2,7 +2,7 @@
 // 1. creare class and constructor with incoming data;
 // 2. Create methods;
 // 3. Check code
-class Order {
+export class Order {
     constructor(price, city, type) {
         this.price = price;
         this.city = city;
