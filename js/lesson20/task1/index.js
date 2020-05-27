@@ -25,8 +25,15 @@ class User {
         return newUser;
     }
 }
-// const user1= new User('Tom',17);
+
+const user1 = new User('Tom', 17);
+user1.sayHi()
+user1.setAge(25)
+
 console.log(User.createEmpty());
+// console.log(user1.createEmpty=[])
+// createEmpty()
+
 
 
 export { User }
