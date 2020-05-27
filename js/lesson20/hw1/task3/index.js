@@ -15,7 +15,7 @@ export class Order {
     }
 
 
-    checkPrice(price) {
+    checkPrice() {
         if (price < 1000) {
             return false;
         }
