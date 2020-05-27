@@ -10,12 +10,12 @@ User.prototype.requestNewPhoto = function() {
     console.log(`New photo request was sent for ${this.name}`)
 }
 User.prototype.setAge = function(num) {
-    if (num < 0) return false;
+    if (num < 0) { return false };
     this.age = num;
     if (num >= 25) {
         this.requestNewPhoto()
     }
-    return this.age;
+    return num;
 
 }
 
