@@ -16,7 +16,7 @@ export class Order {
 
 
     checkPrice() {
-        if (price < 1000) {
+        if (this.price < 1000) {
             return false;
         }
         return true;
