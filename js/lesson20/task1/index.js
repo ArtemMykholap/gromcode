@@ -25,6 +25,7 @@ class User {
         this.age = null;
     }
 }
+export { User }
 
 
 // function User(name, age) {
