@@ -1,5 +1,5 @@
 const vehicle = {
-    name: 'Argo',
+
     move() {
         console.log(`${this.name} is moving`);
     },
@@ -9,6 +9,8 @@ const vehicle = {
 };
 
 const ship = {
+    name: 'Argo',
+    lastName: 'Argovich',
     startMachine() {
         console.log(`${this.name} lifting anchor up`);
         ship.move();
@@ -21,13 +23,16 @@ const ship = {
     __proto__: vehicle,
 }
 
-
-
-
-function getOwnProps(obj) {
-    return Object.keys(ship);
-
+let keysArr = [];
+for (let prop in ship) {
+    if (ship.hasOwnProperty(prop) && typeof ship[prop] !== 'function') {
+        keysArr.push(prop)
+    }
 }
-//    console.log( getOwnProps(ship))
+
+
+//  console.log(keysArr)
+
+
 
 export { getOwnProps }
