@@ -14,11 +14,12 @@ export class Order {
 
     }
 
+
     checkPrice(price) {
-        if (price > 1000) {
-            return true
+        if (price < 1000) {
+            return false;
         }
-        return false;
+        return true;
     }
 
     confirmOrder() {
