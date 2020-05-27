@@ -4,13 +4,13 @@ class User {
         this.name = name;
         this.age = age;
     }
-    sayHi = function() {
+    sayHi() {
         console.log(`Hi, I am ${this.name}`)
     }
-    requestNewPhoto = function() {
+    requestNewPhoto() {
         console.log(`New photo request was sent for ${this.name}`)
     }
-    setAge = function(num) {
+    setAge(num) {
         if (num < 0) { return false };
         this.age = num;
         if (num >= 25) {
