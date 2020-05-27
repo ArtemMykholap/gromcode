@@ -1,25 +1,25 @@
 export const vehicle = {
     name: 'Argo',
     move() {
-        console.log(`${name} is moving`);
+        console.log(`${this.name} is moving`);
     },
     stop() {
-        console.log(`${name} stopped`);
+        console.log(`${this.name} stopped`);
     }
 
 }
 
 export const ship = {
-    startMachine() {
-        console.log(`${name} lifting anchor up`);
-        this.move();
+        startMachine() {
+            console.log(`${this.name} lifting anchor up`);
+            ship.move();
 
-    },
-    stopMachine() {
-        console.log(`${name} lifting anchor down`);
-        this.stop();
-    },
-    __proto__: vehicle,
-}
-ship.startMachine()
-ship.stopMachine()
+        },
+        stopMachine() {
+            console.log(`${this.name} lifting anchor down`);
+            ship.stop();
+        },
+        __proto__: vehicle,
+    }
+    // ship.startMachine()
+    // ship.stopMachine()
