@@ -25,8 +25,9 @@ const ship = {
 
 
 function getOwnProps(obj) {
-    console.log(Object.keys(ship));
+    return Object.keys(ship);
 
 }
-getOwnProps(ship)
+//    console.log( getOwnProps(ship))
+
 export { getOwnProps }
