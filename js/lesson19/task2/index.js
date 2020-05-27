@@ -1,0 +1,32 @@
+const vehicle = {
+    name: 'Argo',
+    move() {
+        console.log(`${this.name} is moving`);
+    },
+    stop() {
+        console.log(`${this.name} stopped`);
+    }
+};
+
+const ship = {
+    startMachine() {
+        console.log(`${this.name} lifting anchor up`);
+        ship.move();
+
+    },
+    stopMachine() {
+        console.log(`${this.name} lifting anchor down`);
+        ship.stop();
+    },
+    __proto__: vehicle,
+}
+
+
+
+
+function getOwnProps(obj) {
+    console.log(Object.keys(ship));
+
+}
+getOwnProps(ship)
+export { getOwnProps }
