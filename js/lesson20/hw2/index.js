@@ -28,26 +28,25 @@ class User {
 
 class UserRepository {
     constructor(users) {
-        this._users = users
+        this._users = Object.freeze(users);
     }
 
     get users() {
-        return Object.freeze(this._users)
+        return this._users;
     }
 
     getUserNames() {
-        let arr = Object.values(this._users).flat().map(object => object.name);
-        console.log(arr)
+        return Object.values(this._users).flat().map(object => object.name);
     }
-    getUserIds() {
-        let arr = Object.values(this._users).flat().map(object => object.id);
-        console.log(arr)
 
+    getUserIds() {
+        return Object.values(this._users).flat().map(object => object.id);
     }
+
     getUserNameById(num) {
-        let nameId = this.users.find(user => user.id === num).name;
-        console.log(nameId)
+        return this.users.find(user => user.id === num).name;
     }
+
 }
 
 // const user1 = new User('11.22.11', 'Jesus', '11');
