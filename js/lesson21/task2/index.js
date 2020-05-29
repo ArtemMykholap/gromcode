@@ -1,5 +1,5 @@
  const getTitleElement = () => {
-         export const titleElem = document.querySelector('.title'); //ищем селектор по классу
+         const titleElem = document.querySelector('.title'); //ищем селектор по классу
          console.dir(titleElem); //выводим в консоль
          return titleElem;
      }
