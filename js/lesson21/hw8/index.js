@@ -1,4 +1,4 @@
-const finishList = () => {
+export const finishList = () => {
     const elementLi1 = document.createElement('li'); //create element
     const elementLi4 = document.createElement('li');
     const elementLi6 = document.createElement('li');
