@@ -5,7 +5,7 @@
 // кладем туда вічесленное значение
 
 
-const squaredNumbers = () => {
+export const squaredNumbers = () => {
     const elementLi = [...document.querySelectorAll('.number')];
     let dataNumbers = elementLi.map(el => el.dataset.number);
     let sqrtNumbers = dataNumbers.map(el => el ** 2);
