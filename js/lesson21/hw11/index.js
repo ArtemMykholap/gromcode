@@ -5,9 +5,12 @@
 // кладем туда вічесленное значение
 
 
-
 const squaredNumbers = () => {
-    const elementLi = document.querySelectorAll('.number');
+    const elementLi = [...document.querySelectorAll('.number')];
+    let dataNumbers = elementLi.map(el => el.dataset.number);
+    let sqrtNumbers = dataNumbers.map(el => el ** 2);
+    return elementLi.map((el, index) => el.dataset.squaredNumber = sqrtNumbers[index]);
+
 
 
 }
