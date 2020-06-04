@@ -67,9 +67,8 @@ function updateTask(event) {
     if (!classes.contains('list__item-checkbox'))
         return;
 
-
     const task = tasks.find(task => task.id === event.target.dataset.taskId);
-    task.done = !task.done
+    task.done = event.target.checked
     renderTasks(tasks)
 
 }
