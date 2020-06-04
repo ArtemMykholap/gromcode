@@ -24,6 +24,11 @@ let tasks = [{
         done: false,
         id: '4'
     },
+    {
+        text: 'quit',
+        done: false,
+        id: '5'
+    },
 
 ];
 
