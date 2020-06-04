@@ -4,7 +4,7 @@
 // 4. addEventListener for create button
 // 5. checkbox handler - update task in the array and render tasks
 // 6. create handler - create task object and put to the array and render tasks
-const tasks = [{
+let tasks = [{
         text: 'Hello',
         done: false,
         id: '1'
@@ -64,14 +64,12 @@ listElem.addEventListener('click', updateTask);
 function updateTask(event) {
 
     const classes = event.target.classList;
-
     if (!classes.contains('list__item-checkbox'))
         return;
-    const task = tasks.find(task => task.id === event.target.dataset.taskId);
-    task.done = !task.done;
-    // console.log(task)
 
-    listElem.innerHTML = ''
+
+    const task = tasks.find(task => task.id === event.target.dataset.taskId);
+    task.done = !task.done
     renderTasks(tasks)
 
 }
@@ -84,13 +82,14 @@ createBtn.addEventListener('click', createTask);
 function createTask(event) {
 
     const input = document.querySelector('.task-input');
-    const inputVal = input.value
+    if (!input.value) { return }
 
-    if (!inputVal) { return }
 
     tasks.push({
-        text: inputVal,
+
+        text: input.value,
         done: false,
+        id: String(tasks.length + 1),
     })
 
     input.value = '';
