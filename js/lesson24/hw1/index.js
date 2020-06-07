@@ -7,7 +7,7 @@
 // let endDate=new Date('1/12/2018/ 04:03:06');
 
 
-export function getDiff(startDate, endDate) {
+function getDiff(startDate, endDate) {
     const msInDay = 1000 * 60 * 60 * 24;
     const modulTime = Math.abs(startDate.getTime() - endDate.getTime());
 
@@ -31,5 +31,7 @@ export function getDiff(startDate, endDate) {
 
 
 getDiff(startDate, endDate);
+
+export { getDiff }
 // console.log(startDate)
 // console.log(endDate)
