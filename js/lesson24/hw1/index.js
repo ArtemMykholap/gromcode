@@ -3,8 +3,8 @@
 // take days in milliseconds from the total
 // and divide the result into hours, minutes and seconds
 
-// let startDate=new Date('1/11/2019/ 01:01:01');
-// let endDate=new Date('1/12/2018/ 04:03:06');
+// let startDate = new Date('1/11/2018/ 01:01:01');
+// let endDate = new Date('1/12/2019/ 04:03:06');
 
 
 function getDiff(startDate, endDate) {
@@ -13,7 +13,7 @@ function getDiff(startDate, endDate) {
 
     const howDaysFloor = Math.floor(modulTime / msInDay);
     const howHoursMs = modulTime - (howDaysFloor * msInDay);
-    const howHoursFloor = Math.floor(howHoursMs / (1000 * 60 * 60));
+    const howHoursFloor = Math.floor(howHoursMs / (msInDay / 24));
     const howMinutesMs = modulTime - (howHoursFloor * msInDay / 24 + howDaysFloor * msInDay);
     const howMinutesFloor = Math.floor(howMinutesMs / (1000 * 60));
     const howSecMs = modulTime - (howMinutesFloor * (1000 * 60) + howDaysFloor * msInDay + howHoursFloor * (1000 * 60 * 60))
@@ -30,8 +30,8 @@ function getDiff(startDate, endDate) {
 }
 
 
-getDiff(startDate, endDate);
+// console.log(getDiff(startDate, endDate))
 
-export { getDiff }
 // console.log(startDate)
 // console.log(endDate)
+export { getDiff };
