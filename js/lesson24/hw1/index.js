@@ -26,7 +26,7 @@ function getDiff(startDate, endDate) {
     const howSec = Math.floor(restAfterMinutes / 1000);
 
 
-    return `${howDays}d ${howHours}h ${howMinutes}m ${howSec}s `
+    return `${howDays}d ${howHours}h ${howMinutes}m ${howSec}s`
 }
 
 // console.log (getDiff(startDate, endDate))
