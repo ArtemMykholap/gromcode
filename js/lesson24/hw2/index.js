@@ -9,30 +9,35 @@ let tasks = [{
         done: false,
         id: '1',
         date: new Date('2019, 1,10'),
+        doneDate: new Date(),
     },
     {
         text: 'go to the gym',
         done: true,
         id: '2',
-        date: new Date('2019, 1,12')
+        date: new Date('2019, 1,12'),
+        doneDate: new Date(),
     },
     {
         text: 'lunch',
         done: true,
         id: '3',
         date: new Date('2019, 1,11'),
+        doneDate: new Date(),
     },
     {
         text: 'exit',
         done: false,
         id: '4',
-        date: new Date('2019, 1,14')
+        date: new Date('2019, 1,14'),
+        doneDate: new Date(),
     },
     {
         text: 'quit',
         done: false,
         id: '5',
-        date: new Date('2019, 2,10')
+        date: new Date('2019, 2,10'),
+        doneDate: new Date(),
     },
 
 ];
@@ -47,28 +52,29 @@ const renderTasks = tasksList => {
     listElem.innerHTML = '';
     const tasksElems = tasksList
         .slice()
-
-    .sort((a, b) => new Date(b.date) - new Date(a.date))
         .sort((a, b) => a.done - b.done)
+        .sort((a, b) => {
+            if (a.done - b.done !== 0) { return a.done - b.done; }
+            if (a.done === true) { return new Date(b.doneDate) - new Date(a.doneDate); }
+            return new Date(b.date) - new Date(a.date);
+        })
+        .map((task) => {
+            const listItemElem = document.createElement('li');
+            listItemElem.classList.add('list__item');
 
-    .map((task) => {
-        const listItemElem = document.createElement('li');
-        listItemElem.classList.add('list__item');
 
+            const checkbox = document.createElement('input');
+            checkbox.setAttribute('type', 'checkbox');
 
-
-        const checkbox = document.createElement('input');
-        checkbox.setAttribute('type', 'checkbox');
-
-        checkbox.setAttribute('data-task-id', task.id);
-        checkbox.checked = task.done;
-        checkbox.classList.add('list__item-checkbox');
-        if (task.done) {
-            listItemElem.classList.add('list__item_done');
-        }
-        listItemElem.append(checkbox, task.text);
-        return listItemElem;
-    });
+            checkbox.setAttribute('data-task-id', task.id);
+            checkbox.checked = task.done;
+            checkbox.classList.add('list__item-checkbox');
+            if (task.done) {
+                listItemElem.classList.add('list__item_done');
+            }
+            listItemElem.append(checkbox, task.text);
+            return listItemElem;
+        });
 
 
     listElem.append(...tasksElems);
@@ -87,6 +93,8 @@ function updateTask(event) {
     const tar = event.target
     const task = tasks.find(task => task.id === event.target.dataset.taskId);
     task.done = tar.checked
+    task.doneDate = new Date()
+
     renderTasks(tasks)
 
 }
@@ -107,7 +115,8 @@ function createTask(event) {
         text: input.value,
         done: false,
         id: String(tasks.length + 1),
-        date: new Date()
+        date: new Date(),
+        doneDate: undefined,
     })
 
     input.value = '';
