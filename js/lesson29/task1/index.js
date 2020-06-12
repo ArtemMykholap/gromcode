@@ -14,7 +14,7 @@ export const addImage = (imgSrc, callback) => {
 
 };
 
-const imgSrc = 'https://focus.ua/storage/pub/images/2017/2615387.jpg'
+// const imgSrc = 'https://focus.ua/storage/pub/images/2017/2615387.jpg'
 const onImageLoaded = (error, data) => {
     if (error) {
         console.log(error);
@@ -24,4 +24,4 @@ const onImageLoaded = (error, data) => {
     const sizeElem = document.querySelector('.image-size');
     sizeElem.textContent = `${width} x ${height}`;
 };
-addImage(imgSrc, onImageLoaded);
+// addImage(imgSrc, onImageLoaded);
