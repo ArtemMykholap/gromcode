@@ -10,7 +10,7 @@ export function shmoment(date) {
         add(key, value) {
             let upDate = {
                 years: (value) => (date.setFullYear(date.getFullYear() + value)),
-                month: (value) => (date.setMonth(date.getMonth() + value)),
+                months: (value) => (date.setMonth(date.getMonth() + value)),
                 days: (value) => (date.setDate(date.getDate() + value)),
                 hours: (value) => (date.setHours(date.getHours() + value)),
                 minutes: (value) => (date.setMinutes(date.getMinutes() + value)),
@@ -23,7 +23,7 @@ export function shmoment(date) {
         subtract(key, value) {
             let upDate = {
                 years: (value) => (date.setFullYear(date.getFullYear() - value)),
-                month: (value) => (date.setMonth(date.getMonth() - value)),
+                months: (value) => (date.setMonth(date.getMonth() - value)),
                 days: (value) => (date.setDate(date.getDate() - value)),
                 hours: (value) => (date.setHours(date.getHours() - value)),
                 minutes: (value) => (date.setMinutes(date.getMinutes() - value)),
