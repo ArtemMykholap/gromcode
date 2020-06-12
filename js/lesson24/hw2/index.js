@@ -1,10 +1,4 @@
-// 1. create array of tasks - and create 5 test tasks +++
-// 2. write renderTasks (tasks) fucn that render all tasks
-// 3. addEventListener for .list
-// 4. addEventListener for create button
-// 5. checkbox handler - update task in the array and render tasks
-// 6. create handler - create task object and put to the array and render tasks
-let tasks = [{
+const tasks = [{
         text: 'Hello',
         done: false,
         id: '1',
@@ -42,7 +36,6 @@ let tasks = [{
 
 ];
 
-
 const listElem = document.querySelector('.list')
 
 const renderTasks = tasksList => {
@@ -75,7 +68,7 @@ const renderTasks = tasksList => {
             listItemElem.append(checkbox, task.text);
             return listItemElem;
         });
-
+    // localStorage.setItem('tasksList', JSON.stringify(tasksList))
 
     listElem.append(...tasksElems);
 };
@@ -123,4 +116,4 @@ function createTask(event) {
     renderTasks(tasks)
 
 }
-console.log(tasks)
+// console.log(tasks)
