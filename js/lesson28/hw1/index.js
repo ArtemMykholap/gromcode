@@ -4,7 +4,7 @@
 
 
 
-function shmoment(date) {
+export function shmoment(date) {
     let newDate = new Date(date);
     const reTime = {
         add(key, value) {
