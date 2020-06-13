@@ -1,4 +1,4 @@
-const pinger = (num, period) => {
+export const pinger = (num, period) => {
     const interval = setInterval(() => {
         console.log('Ping');
     }, period);
