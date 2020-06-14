@@ -11,6 +11,6 @@ export const requestUserData = (userId, callback) => {
     }
     setTimeout(() => callback({
         userId: userId,
-        email: `${userId}@examle.com`,
+        email: `${userId}@example.com`,
     }), Math.ceil(Math.random() * 3000));
 };
