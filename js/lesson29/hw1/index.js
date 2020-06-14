@@ -20,3 +20,4 @@ const requestUserData = (userId, callback) => {
         email: `${userId}@examle.com`,
     }), random)
 };
+export { requestUserData }
