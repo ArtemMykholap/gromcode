@@ -1,4 +1,5 @@
 const serverResponsePromise = new Promise(resolve => {
+
     const serverResponse = {
         ok: true,
         json() {
