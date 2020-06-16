@@ -1,7 +1,7 @@
 const getValueWithDelay = (value, delay) =>
     new Promise(resolve => {
         setTimeout(() => {
-            console.log(value)
+            // console.log(value)
             resolve(value);
         }, delay)
     });
@@ -21,8 +21,8 @@ const getSum = numbers =>
 export const asyncSum = (...asyncNumbers) => {
     return Promise.all(asyncNumbers)
         .then(numbers => getSum(numbers))
-        .catch(() => Promise.reject(new Erroro('Can\'t calculate')))
+        .catch(() => Promise.reject(new Error('Can\'t calculate')))
 };
 
-asyncSum(asyncNum1, reject(new Error('err')), asyncNum3)
+asyncSum(asyncNum1, Promise.reject(new Error('err')), asyncNum3)
     .then(result => console.log(result))
