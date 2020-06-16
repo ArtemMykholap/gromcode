@@ -1,5 +1,7 @@
-export const makePromise = number => new Promise((resolve) =>
-        resolve(number))
-    .then(number => {
-        console.log(number);
-    });
+ export const makePromise = number => Promise.resolve(number)
+
+
+ //  makePromise(17)
+ //      .then(number => {
+ //          console.log(number); // 17
+ //      });
