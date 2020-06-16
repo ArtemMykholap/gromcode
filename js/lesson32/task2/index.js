@@ -20,7 +20,7 @@ const servers = [
     'https://server.com/au/userId',
 ]
 
-export const getUserAsap = userId => {
+export const getUserASAP = userId => {
     const userUrls = servers
         .map(serverUrl => `${serverUrl}/1${userId}`);
 
@@ -28,5 +28,5 @@ export const getUserAsap = userId => {
     return Promise.race(requests);
 }
 
-getUserAsap('user-id-1')
+getUserASAP('user-id-1')
     .then(res => console.log(res))
