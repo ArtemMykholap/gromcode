@@ -3,18 +3,19 @@ export class Sportsman {
         this.name = name;
     }
     run() {
-        console.log(`${this.name} is runing`)
+        console.log(`${this.name} is running`)
     }
 }
 
 export class Swimmer extends Sportsman {
     constructor(name, styleOfSwim) {
-        super(name);
+        super(name, run());
         this.styleOfSwim = styleOfSwim;
     }
     swim() {
         console.log(`${this.name} is swimming ${this.styleOfSwim}`)
     }
+
 }
 
 const swimmer = new Swimmer('John', 'breaststroke');
