@@ -1,4 +1,4 @@
-class Sportsman {
+export class Sportsman {
     constructor(name) {
         this.name = name;
     }
@@ -7,7 +7,7 @@ class Sportsman {
     }
 }
 
-class Swimmer extends Sportsman {
+export class Swimmer extends Sportsman {
     constructor(name, styleOfSwim) {
         super(name);
         this.styleOfSwim = styleOfSwim;
