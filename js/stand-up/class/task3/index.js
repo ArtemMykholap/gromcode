@@ -6,14 +6,14 @@ export class Sportsman {
         console.log(`${this.name} is running`)
     }
 }
-
 export class Swimmer extends Sportsman {
     constructor(name, styleOfSwim) {
-        super(name, run());
+        super(name);
         this.styleOfSwim = styleOfSwim;
     }
     swim() {
         console.log(`${this.name} is swimming ${this.styleOfSwim}`)
+        super.run()
     }
 
 }
