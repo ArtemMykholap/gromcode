@@ -16,9 +16,9 @@ loginFormElem.addEventListener("submit", function(event) {
     // console.log(loginFormElem)
 
     event.preventDefault();
-
-
-    const formData = Object.assign({}, [...new FormData(loginFormElem)].flat(1))
+    // const formData = Object.assign({}, [...new FormData(loginFormElem)].flat(1))
+    const formData = [...new FormData(loginFormElem)]
+        .reduce((acc, [input, value]) => ({...acc, [input]: value }), {});
 
     console.log(formData)
 
