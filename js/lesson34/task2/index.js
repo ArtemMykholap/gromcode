@@ -4,7 +4,7 @@ export const getUsersList = () =>
 
 
 
-export const getTaskById = userId =>
+export const getUserById = userId =>
     fetch(`${baseUrl}/${userId}`)
     .then(response => response.json())
 
