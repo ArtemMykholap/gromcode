@@ -11,13 +11,16 @@ export const getUserById = userId =>
 export function createUser(obj) {
     return fetch(baseUrl, {
         method: 'POST',
-        header: {
+        headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify(obj),
 
     })
 };
+
+
+
 
 
 export const updateUser = (obj, userId) => {
