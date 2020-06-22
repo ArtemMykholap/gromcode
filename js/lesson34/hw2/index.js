@@ -16,15 +16,17 @@ loginFormElem.addEventListener("submit", function(event) {
     // console.log(loginFormElem)
 
     event.preventDefault();
-    const formData = [...new FormData(loginFormElem)];
+    const formData = [...new FormData(loginFormElem)].join('')
+        // .reduce((acc, [field, value]) => ({...acc, [field]: value }), {});
+
     // console.log(formData)
 
     fetch(baseUrl, {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json;charset=utf-8'
-            },
-            body: JSON.stringify(formData)
+            // headers: {
+            //     'Content-Type': 'application/json;charset=utf-8'
+            // },
+            body: formData,
         })
         .then(response => response.json())
         .then(result => {
