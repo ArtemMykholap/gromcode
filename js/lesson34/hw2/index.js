@@ -12,17 +12,11 @@ function validation() {
 }
 
 
-loginFormElem.addEventListener("input", function() {
-    loginFormElem.reportValidity() ? btnElem.disabled = false : btnElem.disabled = false;
-    errorElem.textContent = '';
-})
-
-
 loginFormElem.addEventListener("submit", function(event) {
     // console.log(loginFormElem)
 
     event.preventDefault();
-    const formData = new FormData(loginFormElem);
+    const formData = [...new FormData(loginFormElem)];
     // console.log(formData)
 
     fetch(baseUrl, {
@@ -39,6 +33,10 @@ loginFormElem.addEventListener("submit", function(event) {
             alert(JSON.stringify(result))
         })
 
-    .catch(() => errorElem.textContent = 'Failled to create user')
+    .catch(() => errorElem.textContent = 'Failed to create user')
 
 });
+loginFormElem.addEventListener("input", function() {
+    loginFormElem.reportValidity() ? btnElem.disabled = false : btnElem.disabled = false;
+    errorElem.textContent = '';
+})
