@@ -21,9 +21,7 @@ export function createUser(obj) {
 
 
 
-
-
-export const updateUser = (obj, userId) => {
+export function updateUser(obj, userId) {
     return fetch(`${baseUrl}/${userId}`, {
         method: 'PUT',
         headers: {
@@ -33,6 +31,7 @@ export const updateUser = (obj, userId) => {
 
     })
 };
+
 
 export const deleteUser = userId => {
     return fetch(`${baseUrl}/${userId}`, {
