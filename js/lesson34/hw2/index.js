@@ -1,4 +1,3 @@
-'use strict';
 const baseUrl = 'https://5ef08099ad6d71001617a47b.mockapi.io/api/v1/form'
 
 const loginFormElem = document.querySelector('.login-form');
