@@ -8,7 +8,7 @@ export const getUserById = userId =>
     fetch(`${baseUrl}/${userId}`)
     .then(response => response.json())
 
-export const createUser = obj => {
+export function createUser(obj) {
     return fetch(baseUrl, {
         method: 'POST',
         header: {
