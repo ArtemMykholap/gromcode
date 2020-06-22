@@ -16,10 +16,11 @@ loginFormElem.addEventListener("submit", function(event) {
     // console.log(loginFormElem)
 
     event.preventDefault();
-    const formData = [...new FormData(loginFormElem)]
-        // .reduce((acc, [field, value]) => ({...acc, [field]: value }), {});
 
-    // console.log(formData)
+
+    const formData = Object.assign({}, [...new FormData(loginFormElem)].flat(1))
+
+    console.log(formData)
 
     fetch(baseUrl, {
             method: 'POST',
