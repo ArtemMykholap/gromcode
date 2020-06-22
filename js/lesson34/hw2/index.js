@@ -27,10 +27,10 @@ loginFormElem.addEventListener("submit", function(event) {
 
     fetch(baseUrl, {
             method: 'POST',
-            // headers: {
-            //     'Content-Type': 'application/json;charset=utf-8'
-            // },
-            body: formData
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8'
+            },
+            body: JSON.stringify(formData)
         })
         .then(response => response.json())
         .then(result => {
