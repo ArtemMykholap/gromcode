@@ -26,7 +26,7 @@ export function createUser(obj) {
 export const updateUser = (obj, userId) => {
     return fetch(`${baseUrl}/${userId}`, {
         method: 'PUT',
-        header: {
+        headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify(obj),
@@ -34,7 +34,7 @@ export const updateUser = (obj, userId) => {
     })
 };
 
-export const deleteUser = id => {
+export const deleteUser = userId => {
     return fetch(`${baseUrl}/${userId}`, {
         method: 'DELETE',
     })
