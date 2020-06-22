@@ -19,11 +19,11 @@ loginFormElem.addEventListener("input", function() {
 
 
 loginFormElem.addEventListener("submit", function(event) {
-    console.log(loginFormElem)
+    // console.log(loginFormElem)
 
     event.preventDefault();
     const formData = new FormData(loginFormElem);
-    console.log(formData)
+    // console.log(formData)
 
     fetch(baseUrl, {
             method: 'POST',
@@ -35,6 +35,7 @@ loginFormElem.addEventListener("submit", function(event) {
         .then(response => response.json())
         .then(result => {
             inputsElem.map(elem => elem.value = '');
+            btnElem.disabled = true;
             alert(JSON.stringify(result))
         })
 
