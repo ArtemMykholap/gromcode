@@ -24,9 +24,8 @@ export const updateServerTask = taskData => {
         body: JSON.stringify(taskData)
     })
 }
-export const deleteTask = taskData => {
-    return fetch(`${baseUrl}/${taskData.id}`, {
+export const deleteTask = (id) => {
+    return fetch(`${baseUrl}/${id}`, {
         method: 'DELETE',
-
     })
 };

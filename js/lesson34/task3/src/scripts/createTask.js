@@ -23,8 +23,7 @@ function onCreateTask(event) {
     createTask(newTask)
         .then(() => getTasksList())
         .then(newTasksList => {
-            console.log(newTasksList)
-                // setTasks(newTasksList);
+
             renderTasks(newTasksList);
         })
     input.value = '';

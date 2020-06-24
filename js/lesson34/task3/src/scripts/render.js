@@ -1,7 +1,3 @@
-// import { tasks } from './tasks.js';
-
-
-
 export const listElem = document.querySelector('.list')
 
 export const renderTasks = (tasksList) => {
@@ -33,9 +29,13 @@ export const renderTasks = (tasksList) => {
             if (task.done) {
                 listItemElem.classList.add('list-item_done');
             }
+            const textElem = document.createElement('span');
+            textElem.classList.add('list-item__text');
+            textElem.textContent = task.text;
+
             const deleteBtnElem = document.createElement('button');
             deleteBtnElem.classList.add('list-item__delete-btn');
-            listItemElem.append(checkbox, task.text, deleteBtnElem);
+            listItemElem.append(checkbox, textElem, deleteBtnElem);
             return listItemElem;
         });
     // localStorage.setItem('tasksList', JSON.stringify(tasksList))

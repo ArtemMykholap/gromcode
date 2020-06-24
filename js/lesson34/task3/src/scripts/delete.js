@@ -1,17 +1,18 @@
-import { renderTasks } from './render.js';
 import { getTasksList, deleteTask } from './tasksGateway.js';
+import { renderTasks } from './render.js';
 
-function onDeleteTask() {
 
-    const isDeleteBtn = event.target.classList.contains('list-item__delete-btn');
-    if (!isDeleteBtn) return;
+export function onDeleteTask() {
 
-    const nearestInputId = event.target.parentNode.firstElementChild.dataset.id;
-    deleteTask(nearestInputId)
+    const deleteButton = event.target.classList.contains('list-item__delete-btn');
+    if (!deleteButton) return;
+
+    const idElem = event.target.parentNode.firstElementChild.dataset.taskId;
+    console.log(event)
+
+    deleteTask(idElem)
         .then(() => getTasksList())
-        .then(() => {
-            renderTasks();
+        .then((response) => {
+            renderTasks(response);
         });
 };
-
-export { onDeleteTask };
