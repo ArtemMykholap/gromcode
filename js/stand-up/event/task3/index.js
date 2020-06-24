@@ -8,8 +8,11 @@
 
 // const listItem = document.querySelectorAll('.list-item');
 const list = document.querySelector('.list');
+// const listItem = document.querySelector('.list-item');
+
+
 clickHandler = (event) => {
-    if (event.target.tagName != 'LI') return;
+    if (!event.target.classList.contains('list-item')) return;
     console.log(event.target.textContent)
 };
 list.addEventListener('click', clickHandler)
