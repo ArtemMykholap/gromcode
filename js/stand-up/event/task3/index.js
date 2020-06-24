@@ -8,12 +8,12 @@
 
 // const listItem = document.querySelectorAll('.list-item');
 const list = document.querySelector('.list');
-// const listItem = document.querySelector('.list-item');
+
 
 
 clickHandler = (event) => {
     if (!event.target.classList.contains('list-item')) return;
-    console.log(event.target.textContent)
+    console.log(event.target.innerHTML)
 };
 list.addEventListener('click', clickHandler)
     // listItem.forEach(el => el.addEventListener('click', clickHandler));
