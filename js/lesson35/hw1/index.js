@@ -8,14 +8,14 @@ function parseUser(jsonString) {
     try {
         result = JSON.parse(jsonString);
 
-    } catch (err) {
-        throw new Error('Null')
+    } catch {
+        return null
     };
 
 
     return result
 }
-console.log(parseUser(jsonString))
+// console.log(parseUser(jsonString))
 
 
 // function readUser(json) {
