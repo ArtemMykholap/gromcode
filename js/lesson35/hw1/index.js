@@ -3,7 +3,7 @@ const jsonString = '{"name":"Bo"';
 // console.log(jsonString)
 // console.log(typeof jsonString)
 
-function parseUser(jsonString) {
+export function parseUser(jsonString) {
     let result;
     try {
         result = JSON.parse(jsonString);
