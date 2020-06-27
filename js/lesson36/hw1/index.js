@@ -1,28 +1,30 @@
-export async function fetchFunc(request) {
+const fetchFunc = async request => {
     try {
-        const result = await fetch(`https://api.github.com/users/${request}`)
+        const result = await fetch(`https://api.github.com/users/${request}`);
         if (result.status === 200) {
             return result.json();
         }
+        return result
     } catch (error) {
-        console.log(error)
-
+        console.log(error.message);
     }
+
 }
 
-export async function getUsersBlogs(userId) {
+export const getUsersBlogs = async usersId => {
     try {
-        const result = Promise.all(userId.map(userId => {
-            fetchFunc(userId)
-                .then(response => response.blog);
-            return result
+        return Promise.all(usersId.map(response =>
+            fetchFunc(response)
+            .then(user => user.blog)
 
-        }))
+        ))
+
     } catch (error) {
-        console.log(error)
+        throw new Error("Failed");
     }
 
-}
+};
+
 const userId = (['facebook', 'google', 'github']);
 getUsersBlogs(userId)
-    .then(requestList => console.log(requestList));
+    .then(response => console.log(response))
