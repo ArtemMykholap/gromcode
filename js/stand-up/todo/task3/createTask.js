@@ -1,3 +1,7 @@
+import { createTask, getTasks } from './gateway.js'
+import { renderTasks } from './render.js'
+
+
 export const onCreateTask = () => {
     const taskTitleInputElem = document.querySelector('.task-input');
     const text = taskTitleInputElem.value;
@@ -8,15 +12,13 @@ export const onCreateTask = () => {
     const newTask = {
         text,
         done: false,
-        createDate: new Date().toISOString(),
-        id: Math.random().toISOString()
+        createdDate: new Date().toISOString(),
     };
     createTask(newTask)
         .then(() => getTasksList())
         .then(newTasksList => {
-            setItem('tasksList', newTasksList);
-            renderTasks();
+            renderTasks(newTasksList)
         })
-    const newTasksList = tasksList.concat();
-    renderTasks();
+
+
 }
