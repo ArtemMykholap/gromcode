@@ -1,7 +1,8 @@
 const baseUrl = 'https://5e5cf5eb97d2ea0014796f01.mockapi.io/api/v1';
 
 function getUserData(userId) {
-    return fetch(`${baseUrl}/users/${userId}`).then(response => {
+    const response = await fetch(`${baseUrl}/users/${userId}`);
+    then(response => {
         if (!response.ok) {
             throw new Error('Can not find a user');
         }
@@ -9,14 +10,10 @@ function getUserData(userId) {
     });
 }
 
-function printUserData(userId) {
-    getUserData(userId)
-        .then(userData => {
-            console.log(userData);
-        })
-        .catch(error => {
-            console.log(error.message);
-        });
+async function printUserData(userId) {
+    const user = await getUserData(userId)
+
+
 }
 
 printUserData(10)
